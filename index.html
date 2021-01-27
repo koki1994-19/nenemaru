@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0”>
+  <link rel="stylesheet" href="responsive.css">
+  <title>ネネマルシート</title>
+  <meta name="description" content=“ネネマルシートのサイトです”>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <!-- スムーズスクロール部分の記述 -->
+  <script>
+    $(function () {
+      // #で始まるアンカーをクリックした場合に処理
+      $('a[href^=#]').click(function () {
+        // スクロールの速度
+        var speed = 400; // ミリ秒
+        // アンカーの値取得
+        var href = $(this).attr("href");
+        // 移動先を取得
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        // 移動先を数値で取得
+        var position = target.offset().top;
+        // スムーススクロール
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+        return false;
+      });
+    });
+  </script>
+</head>
+<!--ここから本文です-->
+<body>
+  <header>
+    <div class="wrap">
+        <div class="header_logo"><img src="img/logo_dm.png" alt="サイトのロゴです"></div>
+        <div class="header_title"><h1>Page Title</h1></div>
+        <nav class="nav_list">
+          <li><a href="#troubless">TROUBLE</a></li>
+          <li><a href="#services">SERVICE</a></li>
+          <li><a href="#benefits">BENEFIT</a></li>
+          <li><a href="#voices">VOICE</a></li>
+          <li><a href="#questiones">Q & A</a></li>
+        </nav>
+      </div>
+  </header>
+<!-- ここからmain -->
+  <main>
+    <div class="wrap">
+      <!-- mainvisual -->
+      <section class="main_visual">
+        <h1 class="main_visual_title1">バイナリーオプションは簡単に稼げないと気がつきましたか？</h1>
+        <h1 class="main_visual_title2">正しい努力を行いましょう！</h1>
+      </section>
+      <!-- trouble -->
+      <section class="troubles" id="troubless">
+        <h1 class="troubles_title">TROUBLE</h1>
+        <div class="trs">
+          <div class="tr1">
+            <img src="img/human.jpg" alt="画像">
+          </div>
+          <div class="tr2">
+            <h1>負ける一番の理由はメンタル管理<br>お金が減る一番の理由は資金管理</h1>
+            <p class="trs_text">ここ数年でBOの情報リテラシーが上がってきたおかげで
+            一昔前のように詐欺商材や高額セミナーなどが減りました。
+            そして本当に勝てる情報が出るようになりました。
+            勝てるツールも勝てるセミナーも実在すると思います。
+            しかし資金をなくしてしまう人が多いのが現状です。<br><br>なぜでしょうか。
+            結局問題はノウハウではなく人だからです。
+            どんなに優秀なノウハウでも使う人によっては勝てないでしょう。
+            いい武器を持っても武器を持ち上げる筋力がなければそれまでということです。</p>
+          </div>
+        </div>
+        <div class="trs">
+          <div class="tr1">
+            <img src="img/human.jpg" alt="画像">
+          </div>
+          <div class="tr2">
+            <h1>今稼げていないのはあなたのせいです。</h1>
+            <p class="trs_text">まずは稼げない原因を自分と認めましょう。
+            あなたは毎月目標を決めて取引をしていますか。
+            あなたは取引を全て記録をしていますか。
+            あなたは週末に自身の取引を分析しますか。
+            あなたは得意苦手をしっかりと把握していますか。
+            全ての問いに躊躇なく「はい」と答えられないのであれば、稼げないのはあなたのせいです。<br><br>これらを実行して基礎を固めない限り
+            いつまでも収益が安定せずにプラスとマイナスを繰り返すようになります。
+            自身の取引を記録&分析することで
+            稼げない理由から自分自身を外しましょう。</p>
+          </div>
+        </div>
+        <div class="trs">
+          <div class="tr1">
+            <img src="img/human.jpg" alt="画像">
+          </div>
+          <div class="tr2">
+            <h1>記録するならしっかりと分析しましょう。</h1>
+            <p class="trs_text">私のSNSからここにたどり着いた方でしたら取引記録をつけている人は多いと思います。
+            しかし実際にどれだけの方が分析をされているでしょうか。
+            毎月目標設定をして自分自身がどれだけ近づいているのかを確認する。
+            そして足りない場合は原因を追求して改善する。
+            この作業をしていない、もしくは出来ない方がほとんどだと思います。<br><br>取引記録が目的ではなく、自身の取引を分析して改善していくことが目的です。
+            そのため記録して満足ではなく、分析を行い成長しましょう。</p>
+          </div>
+        </div>
+      </section>
+      <!-- Recommended -->
+      <section class="recommendes">
+        <div class="wrap">
+          <h1 class="rec_title"><strong class="marker_lines">このような人におススメ！</strong></h1>
+          <div class="ul_align_center">
+            <ul class="rec_list">
+              <li>様々な商材を試したが勝てなかった人</li>
+              <li>勝率が安定しない人</li>
+              <li>自分の得意/苦手な相場/時間帯を知りたい人</li>
+              <li>メンタルを崩して悪いエントリーをしてしまう人</li>
+              <li>資金管理を崩してドカンと負けてしまう人</li>
+              <li>今よりもさらに勝率を上げたい人</li>
+              <li>自身の取引を分析改善したい人</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE -->
+      <section class="service" id="services">
+        <h1 class="troubles_title">SERVICE</h1>
+        <div class="serv">
+
+        </div>
+      </section>
+
+      <!-- BENEFIT -->
+      <section class="benefit" id="benefits">
+        <h1 class="troubles_title">BENEFIT</h1>
+        <div class="bene">
+      
+        </div>
+      </section>
+
+      <!-- VOICE -->
+      <section class="voice" id="voices">
+        <h1 class="troubles_title">VOICE</h1>
+        <div class="voi">
+      
+        </div>
+      </section>
+
+      <!-- Q&A -->
+      <section class="Question" id="questiones">
+        <h1 class="troubles_title">Q & A</h1>
+        <div class="quest">
+      
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+<!--ここまで本文です-->
+</html>
