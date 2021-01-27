@@ -1,0 +1,217 @@
+*{
+Box-sizing:border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:#333;
+}
+.wrap{
+  max-width:1240px;
+  margin:0 auto;
+}
+
+/* header */
+header{
+  height:100px;
+  background-color:#ffcf75;
+}
+header > .wrap{
+  display:flex;
+  align-items: center;
+}
+.header_logo{
+  
+}
+.header_logo > img{
+  width:100px;
+}
+.header_title{
+  margin:0 auto;
+  color:#666;
+  font-size:20px;
+}
+.nav_list{
+    display:flex;
+}
+.nav_list li{
+  line-height: 100px;
+}
+.nav_list li + li{
+  margin:0 0 0 25px;
+}
+.nav_list a{
+  color:#666;
+   font-size:16px;
+}
+
+
+/* main */
+main{
+  min-height:80vh;
+  background:#ff7871;
+}
+
+/* mainvisual */
+.main_visual{
+  background-image:url("img/bg1dm.jpg");
+  background-size:contain;
+  background-size:cover;
+  max-width:100%;
+  color:#ffcf75;
+  font-size:25px;
+  font-weight:bold;
+  text-shadow:1px 1px 3px #333;
+  min-height:100vh;
+}
+.main_visual_title1{
+  padding-top:300px;
+  text-align: center;
+}
+.main_visual_title2{
+  padding-top:50px;
+  text-align: center;
+}
+
+/* troubles */
+.troubles{
+  background-color:#fff;
+}
+.troubles_title{
+  text-align: center;
+  height:40px;
+  background:#ffcf75;
+  text-shadow:1px 1px 1px #333;
+  color:#666;
+}
+/* trs */
+.trs{
+  display:flex;
+  justify-content: space-between;
+  padding:100px 100px 100px;
+}
+.trs:nth-child(odd){
+  flex-direction: row-reverse;
+  margin-top:50px;
+}
+.trs:last-child{
+  margin-top:50px;
+}
+
+.tr1{
+  width:300px;
+    /* margin-right:50px; */
+}
+.tr1 img{
+  max-width:100%;
+  object-fit: contain;
+}
+.tr2{
+  /* flex:1; */
+  width:calc(100% - 300px - 50px);
+  text-align:center;
+}
+.trs_text{
+  text-align: left;
+  margin-top:50px;
+  font-size:20px;
+  color:#555;
+}
+
+/* recommended */
+.recommendes{
+  min-height:100vh;
+  background-color:#fff;
+}
+.rec_title{
+  text-align: center;
+  font-size:40px;
+}
+.marker_lines{
+  background:linear-gradient(transparent 60%,#ff7871 0%)
+}
+.ul_align_center{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+.rec_list{
+  padding-left:15px;
+}
+.rec_list li{
+  position:relative;
+  padding-left:80px;
+    font-size:35px;
+}
+.rec_list{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.rec_list li + li{
+  margin-top:50px;
+}
+.rec_list li::before{
+  content:"";
+  display:block;
+  background-image:url("img/checkbox_icon.png");
+  background-size:cover;
+  width:64px;
+  height:64px;
+  position:absolute;
+  top:50%;
+  left:0px;
+  transform: translateY(-50%);
+}
+/* SERVIVE */
+.serv{
+  min-height:100vh;
+  background-color: #fff;
+}
+
+/* BENEFIT */
+.bene{
+  min-height:100vh;
+  background-color: #fff;
+}
+
+/* VOICE */
+.voi{
+  min-height:100vh;
+  background-color: #fff;
+}
+
+/* Q&A */
+.quest{
+  min-height:100vh;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+ height:100px;
+ background-color:#ffcf75;
+}
